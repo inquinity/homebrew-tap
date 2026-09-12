@@ -1,6 +1,6 @@
 cask "belvedere" do
-  version "1.2.1"
-  sha256 "51b420e6d64344c25739758914ae884642ac2279cf7b6b51de353c29b7567da1"
+  version "1.2.2"
+  sha256 "52c1a8e27d77a2290d17a078aa72f5af5febe3122e8d6052a937ba636abaea20"
 
   url "https://github.com/inquinity/homebrew-tap/releases/download/v#{version}/Belvedere-#{version}.dmg"
   name "Belvedere"
