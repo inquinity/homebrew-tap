@@ -30,6 +30,7 @@ app's own repository where that repo is public, or on this repository otherwise.
 | Cask         | App                                                                                                                              |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------- |
 | `belvedere`  | Sandboxed Markdown previewer, a fork of [Markdown Preview](https://github.com/pluk-inc/markdown-preview) with its outbound network connections removed. Source: [`inquinity/belvedere`](https://github.com/inquinity/belvedere) (private); releases on this repo. |
+| `openinterminal-lite-inquinity` | Finder toolbar app to open the current directory in Terminal, a fork of [OpenInTerminal-Lite](https://github.com/Ji4n1ng/OpenInTerminal) with the macOS 26 toolbar icon fix. Conflicts with the official `openinterminal-lite` cask. Source: [`inquinity/OpenInTerminal`](https://github.com/inquinity/OpenInTerminal). |
 | `qltextview` | Quick Look previews for text-based config and source files. Source: [`inquinity/QLTextView`](https://github.com/inquinity/QLTextView). |
 
 ## License
