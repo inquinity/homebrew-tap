@@ -1,20 +1,9 @@
-# SCAFFOLD — not yet installable.
-#
-# The build pipeline is done: inquinity/yatu produces a signed, notarized,
-# stapled Yatu.app and a DMG (bin/build.sh --release, bin/notarize.sh,
-# bin/package.sh). What is missing is the published release for `url` to point
-# at. Before this cask works:
-#
-#   1. Cut a tag and a GitHub release in inquinity/yatu carrying Yatu-<version>.dmg.
-#   2. Set `version`, replace `sha256 :no_check` with the value from dist/SHA256SUMS.
-#      Do not reuse a sha256 computed before the released artifact was built —
-#      re-notarizing changes the file.
-#   3. brew audit --cask --online yatu && brew install --cask yatu
-#
-# Everything below this line is settled and does not depend on the release.
 cask "yatu" do
-  version "0.0.0" # TODO: the first released version
-  sha256 :no_check # TODO: from dist/SHA256SUMS, for the artifact actually released
+  version "1.0.0"
+  # Verified against the asset downloaded from the release, not the local
+  # build: re-notarizing changes the file, so a hash taken before upload can
+  # be stale.
+  sha256 "60a513b2bf5647d49865f7af96310c88071419c74b36f3e8c338cf16f52e4bf7"
 
   url "https://github.com/inquinity/yatu/releases/download/v#{version}/Yatu-#{version}.dmg"
   name "Yatu"

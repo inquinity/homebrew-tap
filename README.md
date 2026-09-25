@@ -32,6 +32,7 @@ app's own repository where that repo is public, or on this repository otherwise.
 | `belvedere`  | Sandboxed Markdown previewer, a fork of [Markdown Preview](https://github.com/pluk-inc/markdown-preview) with its outbound network connections removed. Source: [`inquinity/belvedere`](https://github.com/inquinity/belvedere) (private); releases on this repo. |
 | `openinterminal-lite-inquinity` | Finder toolbar app to open the current directory in Terminal, a fork of [OpenInTerminal-Lite](https://github.com/Ji4n1ng/OpenInTerminal) with the macOS 26 toolbar icon fix. Conflicts with the official `openinterminal-lite` cask. Source: [`inquinity/OpenInTerminal`](https://github.com/inquinity/OpenInTerminal). |
 | `qltextview` | Quick Look previews for text-based config and source files. Source: [`inquinity/QLTextView`](https://github.com/inquinity/QLTextView). |
+| `yatu`       | Finder toolbar button that opens a terminal at the folder you are looking at, through a sandboxed Finder extension. Requires macOS 13+. Uses code from [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal) (MIT). Coexists with `openinterminal-lite-inquinity`, which stays for older Macs. Source: [`inquinity/yatu`](https://github.com/inquinity/yatu). |
 
 ## License
 
