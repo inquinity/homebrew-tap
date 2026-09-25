@@ -1,9 +1,9 @@
 cask "yatu" do
-  version "1.0.0"
+  version "1.0.1"
   # Verified against the asset downloaded from the release, not the local
   # build: re-notarizing changes the file, so a hash taken before upload can
   # be stale.
-  sha256 "60a513b2bf5647d49865f7af96310c88071419c74b36f3e8c338cf16f52e4bf7"
+  sha256 "7096f31d1b3a5a68caa30a378e6dd606a1b59b2ab360a89ec05cc89fbe8cc0be"
 
   url "https://github.com/inquinity/yatu/releases/download/v#{version}/Yatu-#{version}.dmg"
   name "Yatu"
@@ -43,8 +43,14 @@ cask "yatu" do
          Find "Yatu" under the Finder extensions and switch it on.
       2. In Finder: View > Customize Toolbar, then drag Yatu into the toolbar.
 
-    If Yatu is not in the customize palette, step 1 has not been done — a
-    registered but disabled extension does not appear there.
+    If Yatu is not in the customize palette, either step 1 has not been done —
+    a registered but disabled extension does not appear there — or Finder has
+    not picked up the extension yet. Finder loads these when it starts, so if
+    it has been running a while:
+
+      killall Finder
+
+    Finder relaunches immediately; it only closes your Finder windows.
 
     The first click asks for permission to control Finder. That is how Yatu
     learns which folder you are looking at; it is the app's only entitlement.
