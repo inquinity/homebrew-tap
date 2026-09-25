@@ -1,9 +1,9 @@
 cask "yatu" do
-  version "1.0.1"
+  version "1.0.2"
   # Verified against the asset downloaded from the release, not the local
   # build: re-notarizing changes the file, so a hash taken before upload can
   # be stale.
-  sha256 "7096f31d1b3a5a68caa30a378e6dd606a1b59b2ab360a89ec05cc89fbe8cc0be"
+  sha256 "98f3a2dcb9caf057078eb72d9b5eb74c7e9b9f1a0568998be2da647e51af82e9"
 
   url "https://github.com/inquinity/yatu/releases/download/v#{version}/Yatu-#{version}.dmg"
   name "Yatu"
