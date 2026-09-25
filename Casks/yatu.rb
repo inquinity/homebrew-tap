@@ -36,34 +36,7 @@ cask "yatu" do
   ]
 
   caveats <<~EOS
-    Yatu's toolbar button is a Finder extension, and macOS requires you to turn
-    extensions on yourself. Two one-time steps:
-
-      1. System Settings > General > Login Items & Extensions
-         Find "Yatu" under the Finder extensions and switch it on.
-      2. In Finder: View > Customize Toolbar, then drag Yatu into the toolbar.
-
-    If Yatu is not in the customize palette, either step 1 has not been done —
-    a registered but disabled extension does not appear there — or Finder has
-    not picked up the extension yet. Finder loads these when it starts, so if
-    it has been running a while:
-
-      killall Finder
-
-    Finder relaunches immediately; it only closes your Finder windows.
-
-    The first click asks for permission to control Finder. That is how Yatu
-    learns which folder you are looking at; it is the app's only entitlement.
-    To reset that answer later:
-
-      tccutil reset AppleEvents com.altmansoftwaredesign.yatu
-
-    Replacing a build you compiled yourself? macOS ties both the Automation
-    permission and the extension registration to the code signature, so this
-    signed build asks again and needs enabling again. That is expected.
-
-    OpenInTerminal-Lite can stay installed alongside Yatu — different app,
-    different settings, nothing shared. Remove its toolbar button if you do not
-    want two.
+    Yatu's toolbar button is a Finder extension that you must turn on yourself.
+    Setup instructions: https://github.com/inquinity/yatu#install
   EOS
 end
