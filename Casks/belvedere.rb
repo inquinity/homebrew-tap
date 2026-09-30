@@ -4,7 +4,7 @@ cask "belvedere" do
 
   url "https://github.com/inquinity/belvedere/releases/download/v#{version}/Belvedere-#{version}.dmg"
   name "Belvedere"
-  desc "Fork of Markdown Preview with outbound network access removed"
+  desc "Hardened Markdown reader with Quick Look previews"
   homepage "https://github.com/inquinity/belvedere"
 
   # No Sparkle in this fork -- new versions arrive only via `brew upgrade`.
