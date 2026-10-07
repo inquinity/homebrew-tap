@@ -1,6 +1,6 @@
 cask "belvedere" do
-  version "1.3.2"
-  sha256 "ef33d2175d1a298555994784ea8940f75d14fae23b3afdc85e22add578fdd9d4"
+  version "2.0.0"
+  sha256 "fc200f4d737db6f79b7f12ac39ac8319945616f1fc235b921c7c2275a061a5d9"
 
   url "https://github.com/inquinity/belvedere/releases/download/v#{version}/Belvedere-#{version}.dmg"
   name "Belvedere"
