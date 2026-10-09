@@ -7,7 +7,6 @@ cask "belvedere" do
   desc "Hardened Markdown reader with Quick Look previews"
   homepage "https://github.com/inquinity/belvedere"
 
-  # No Sparkle in this fork -- new versions arrive only via `brew upgrade`.
   livecheck do
     url :url
     strategy :github_latest
