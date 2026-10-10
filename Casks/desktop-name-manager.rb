@@ -1,6 +1,6 @@
 cask "desktop-name-manager" do
-  version "0.1.2"
-  sha256 "b711fc39fd2655e0b10b622ae8c267856e8767cf9ae59c4009dbf0b9b9c67e95"
+  version "0.2.0"
+  sha256 "42194e7006cc86c456e7ffe5c468651b88d24f513ce35dbf059d86c34bcc8911"
 
   url "https://github.com/inquinity/desktop-name-manager/releases/download/v#{version}/dnm-#{version}-arm64.zip"
   name "Desktop Name Manager"
