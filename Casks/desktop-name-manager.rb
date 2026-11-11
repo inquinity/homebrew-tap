@@ -1,6 +1,6 @@
 cask "desktop-name-manager" do
-  version "0.2.2"
-  sha256 "7c1ea34a362afd671551590723a9d5ba05cc4709878bbe1f65434202cb1dd1c6"
+  version "0.3.0"
+  sha256 "18830587fe3865733376d3b4fe31920ac0f9cdd7753ee9738f5ab958a7492ee5"
 
   url "https://github.com/inquinity/desktop-name-manager/releases/download/v#{version}/dnm-#{version}-arm64.zip"
   name "Desktop Name Manager"
@@ -29,7 +29,7 @@ cask "desktop-name-manager" do
 
   caveats <<~EOS
     Labeling the Desktop on screen needs no permission. `dnm --desktop N` needs the
-    Accessibility permission: macOS grants it to the whole app you run dnm from (your terminal), so every program run in that app can then send keystrokes and clicks too; turn it off when you no longer need --desktop.
+    Accessibility permission: macOS grants it to the whole app you run dnm from (your terminal), so every program run in that app can then send keystrokes and clicks too; turn it off when you no longer need --desktop or cleanup --scan.
 
     Uninstalling keeps your wallpapers and dnm's stored labels. For full removal, see
       https://github.com/inquinity/desktop-name-manager#uninstall
