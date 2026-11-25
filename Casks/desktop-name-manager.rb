@@ -1,6 +1,6 @@
 cask "desktop-name-manager" do
-  version "0.4.0"
-  sha256 "c7c477a71ae84ea93eab6f07a002dba566017238d9471fa0e5bc6da803aedbd7"
+  version "0.5.0"
+  sha256 "8b5717214613a03ea2f726e89e113224d4dcec66c87b5fd869e31a905548ae50"
 
   url "https://github.com/inquinity/desktop-name-manager/releases/download/v#{version}/desktop-name-manager-#{version}-arm64.zip"
   name "Desktop Name Manager"
@@ -13,7 +13,7 @@ cask "desktop-name-manager" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: :golden_gate
 
   # The app, and dnm (also as desktop-name), which runs from inside the app and is the same tool as the standalone one.
   app "Desktop Name Manager.app"
